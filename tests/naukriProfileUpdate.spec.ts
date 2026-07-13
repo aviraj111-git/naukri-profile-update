@@ -24,11 +24,14 @@ test('Update Naukri Profile', async ({ page }) => {
   await page.waitForTimeout(2000);
   
   // Fill the job description
-  const textarea = page.locator('textarea[name="aaa"]');
+  const textarea = page.locator('textarea[name="jobDescription"]');
   await textarea.waitFor({ state: 'visible', timeout: 10000 });
   let inputData = await textarea.textContent();
-  inputData = inputData == null ? "Automation": inputData.replace(/\.[A-Z][a-z]+/g, '.');
-  await textarea.fill(inputData.concat(faker.person.firstName()));
+  inputData = inputData == null ? "Automation": inputData.replace(/\d{1,2}\/\d{1,2}\/\d{4},\s*\d{1,2}:\d{2}:\d{2}\s*[ap]m/gi, '');
+  const now: Date = new Date();
+  await textarea.fill(inputData.concat(now.toLocaleString('en-IN', {
+  timeZone: 'Asia/Kolkata',
+  })));
   
   
   // Click save
