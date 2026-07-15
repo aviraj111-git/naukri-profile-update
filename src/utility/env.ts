@@ -10,7 +10,6 @@ const parseEnv = envSchema.safeParse(process.env);
 
 if (!parseEnv.success) {
   console.error('❌ Environment validation failed:');
-  // Prints a clean error message showing exactly which rule was broken
   console.error(JSON.stringify(parseEnv.error, null, 2));
   process.exit(1);
 }
