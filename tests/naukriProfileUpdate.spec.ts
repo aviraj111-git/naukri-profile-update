@@ -1,14 +1,11 @@
 import { test, expect } from '@playwright/test';
-import {faker} from '@faker-js/faker';
 
 test('Update Naukri Profile', async ({ page }) => {
-  await page.goto('https://www.naukri.com/mnjuser/homepage');
+  await page.goto('/mnjuser/homepage');
 
   const profileName = page.getByText('Avinash Kumar');
   await expect(profileName).toBeVisible();
   
-  // 3. Perform other checks (e.g., checking profile completeness, resume updates, etc.)
-  console.log('Successfully skipped login and verified dashboard details!');
   // Navigate to profile
   await page.getByRole('img', { name: 'naukri user profile img' }).click();
   await page.waitForTimeout(500);
