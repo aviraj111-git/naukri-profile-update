@@ -20,5 +20,5 @@ npm install
 
 ## Run the Test
 ```bash
-npm run test:naukri-profile-update
+npm run test:update-profile
 ```
