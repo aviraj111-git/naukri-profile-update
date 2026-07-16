@@ -1,7 +1,7 @@
 import { defineConfig } from '@playwright/test';
 import path from 'path';
 
-const authFile = path.join(process.cwd(), 'naukri/.auth/creds.json');
+const authFile = path.join(process.cwd(), 'creds/.auth/webLocalData.json');
 
 export default defineConfig({
   testDir: './tests',

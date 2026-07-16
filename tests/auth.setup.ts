@@ -2,7 +2,7 @@ import { test as setup } from '@playwright/test';
 import path from 'path';
 import {env} from '../src/utility/env.js';
 
-const authFile = path.join(process.cwd(), 'naukri/.auth/creds.json');
+const authFile = path.join(process.cwd(), 'creds/.auth/webLocalData.json');
 
 setup('authenticate and save session storage', async ({ page }) => {
   await page.goto('/nlogin/login');
