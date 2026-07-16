@@ -1,4 +1,4 @@
-# Naukri Profile Update
+# Profile Updater
 
 This repository contains a Playwright test project for automating a Naukri user profile update workflow.
 

@@ -1,8 +1,8 @@
 {
-  "name": "naukri-profile-update",
+  "name": "profile-updater",
   "version": "1.0.0",
   "scripts": {
-    "test:naukri-profile-update": "playwright test --headed"
+    "test:update-profile": "playwright test --headed"
   },
   "keywords": [],
   "author": "",
