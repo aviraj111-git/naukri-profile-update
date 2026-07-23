@@ -3,7 +3,8 @@ import {z} from 'zod';
 
 const envSchema = z.object({
     USER_NAME: z.email('USER_Name must be a valid email address in .env file'),
-    PASSWORD: z.string().min(1, 'Password field cannot be empty in .env file')
+    PASSWORD: z.string().min(1, 'Password field cannot be empty in .env file'),
+    RP_UUID: z.string().min(1, 'Enter report portal API Key')
 });
 
 const parseEnv = envSchema.safeParse(process.env);

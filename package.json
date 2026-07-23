@@ -2,7 +2,7 @@
   "name": "profile-updater",
   "version": "1.0.0",
   "scripts": {
-    "test:update-profile": "playwright test --headed"
+    "profile-updater": "playwright test --headed"
   },
   "keywords": [],
   "author": "",
@@ -11,6 +11,7 @@
   "devDependencies": {
     "@faker-js/faker": "^10.5.0",
     "@playwright/test": "^1.61.1",
+    "@reportportal/agent-js-playwright": "^5.4.2",
     "@types/node": "^26.1.1",
     "typescript": "^7.0.2"
   },
