@@ -21,5 +21,5 @@ npm install
 
 ## Run the Test
 ```bash
-npm run test:update-profile
+npm run profile-updater
 ```
