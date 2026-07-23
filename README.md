@@ -10,6 +10,7 @@ This repository contains a Playwright test project for automating a Naukri user 
 ```env
 USER_NAME=your-email@example.com
 PASSWORD=yourPassword
+RP_UUID=reportPortalAPIKey
 ```
 
 ## Install Dependencies
